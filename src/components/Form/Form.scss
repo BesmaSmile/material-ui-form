@@ -1,0 +1,140 @@
+.Form {
+    width: 100%;
+    .MuiDialogContent-root {
+        max-height: calc(100vh - 200px)
+    }
+    .MuiDialogTitle-root {
+        background-color: #d3d3d3;
+        box-shadow: 0px 0px 3px 0px grey;
+    }
+    .MuiDialogActions-root {
+        box-shadow: 0px 0px 3px 0px grey;
+        padding: 15px;
+    }
+    .form-content {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    & .frm-inputField {
+        width: 100%;
+        & .MuiOutlinedInput-root {
+            & .MuiOutlinedInput-input {
+                height: 1em;
+                font-size: 14px;
+                font-weight: 500;
+                color: #363535
+            }
+            & .MuiOutlinedInput-notchedOutline {
+                border-color: #eee7e7;
+                border-width: 0.7px;
+            }
+            &:hover {
+                & .MuiOutlinedInput-notchedOutline {
+                    border-color: #cf1840;
+                    ;
+                    border-width: 1px;
+                }
+            }
+        }
+        & .Mui-focused .MuiOutlinedInput-notchedOutline {
+            border-color: #cf1840;
+            ;
+            border-width: 0.7px;
+        }
+        & .MuiInputLabel-root {
+            color: grey;
+            font-size: 14px;
+        }
+        & .Mui-focused.MuiInputLabel-root {
+            color: #cf1840;
+            ;
+            font-weight: bold;
+        }
+        & .MuiSwitch-root,
+        .MuiCheckbox-root {
+            margin-left: 15px;
+        }
+        & .MuiIconButton-colorSecondary:hover {
+            background-color: rgba(155, 155, 155, 0.1);
+        }
+        & .Mui-checked {
+            color: #08ad08;
+            & .MuiSwitch-thumb {
+                background-color: #08ad08;
+            }
+        }
+        & .Mui-checked+.MuiSwitch-track {
+            background-color: #08ad08;
+        }
+        & .MuiFormControlLabel-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #363535
+        }
+        & .Mui-disabled {
+            & .MuiOutlinedInput-input {
+                color: grey
+            }
+            &:hover {
+                & .MuiOutlinedInput-notchedOutline {
+                    border-color: #eee7e7;
+                    border-width: 0.7px;
+                }
+            }
+        }
+        & .frm-error {
+            max-height: 0;
+            transition: all 0.6s linear 0s;
+        }
+        &[witherror=true] {
+            & .frm-error {
+                max-height: 15px;
+                transition: all 0.6s linear 0s;
+            }
+        }
+    }
+    & .frm-error{
+      color: red;
+    }
+    & .frm-submitButton {
+        height: 40px;
+        font-size: 14px;
+        text-transform: none;
+        line-height: normal;
+        .MuiButton-label {
+            color: var(--white);
+            font-weight: 500;
+        }
+    }
+    & .Mui-disabled.MuiButton-root {
+        opacity: 0.7;
+    }
+    & .frm-largeButton {
+        & .frm-submitButton {
+            width: 100%;
+        }
+    }
+    & .frm-submitButton.MuiButton-contained {
+        background-color: #cf1840;
+        color : white
+    }
+    & .frm-cancelButton {
+        height: 40px;
+        font-size: 14px;
+        text-transform: none;
+        line-height: normal;
+        .MuiButton-label {
+            color: #363535;
+            font-weight: 500;
+        }
+    }
+    & input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    & input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
