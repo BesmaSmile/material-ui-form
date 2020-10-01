@@ -1,0 +1,47 @@
+
+
+.thin {
+	font-weight: 100;
+}
+
+.light {
+	font-weight: 200;
+}
+
+.extralight{
+	font-weight: 300;
+}
+ 
+.medium {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.lhn{
+	line-height: normal;
+}
+
+
+@for $i from 1 through 100 {
+	.fs#{$i} {
+		font-size : #{$i}px;
+	}
+	.lh#{$i} {
+		line-height: #{$i}px;
+	}
+}
+
+@for $i from 1 through 1000 {
+	.fw#{$i} {
+		font-weight : #{$i};
+	}
+
+}
+

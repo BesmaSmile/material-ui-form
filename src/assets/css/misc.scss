@@ -1,0 +1,191 @@
+.flex{
+  display: flex;
+}
+
+.fww{
+  flex-wrap: wrap;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.jcc{
+  justify-content: center;
+}
+
+.jcfs{
+  justify-content: flex-start;
+}
+
+.jcfe{
+ justify-content: flex-end;
+}
+
+.jcsb{
+  justify-content: space-between;
+}
+
+.jcsa{
+  justify-content: space-around;
+}
+
+.aic{
+  align-items: center;
+}
+
+.aifs{
+  align-items: flex-start
+}
+
+.aife{
+  align-items: flex-end;
+}
+
+.asc{
+  align-self: center;
+}
+
+.asfs{
+  align-self: flex-start;
+}
+
+.asfe{
+  align-self: flex-end;
+}
+
+.txtac{
+  text-align: center;
+}
+
+.txtal{
+  text-align: left;
+}
+
+.txtar{
+  text-align: right;
+}
+
+.txtaj{
+  text-align: justify
+}
+
+@for $i from 0 through 3000 {
+  .w#{$i}{
+    width: #{$i}px;
+  }
+  .h#{$i}{
+    height: #{$i}px;
+  }
+  .maxw#{$i}{
+    max-width: #{$i}px;
+  }
+  .maxh#{$i}{
+    max-height: #{$i}px;
+  }
+  .minw#{$i}{
+    max-width: #{$i}px;
+  }
+  .minh#{$i}{
+    max-height: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .relw#{$i}{
+    position: relative;
+    width: #{$i +'%'};
+  }
+  .relh#{$i}{
+    position: relative;
+    height: #{$i +'%'};
+  }
+  .relw#{$i}vw {
+    position: relative;
+    width: #{$i + "vw"};
+  }
+  .relh#{$i}vh {
+    position: relative;
+    height: #{$i + "vh"};
+  }
+}
+
+
+@for $i from 1 through 10 {
+  .f#{$i} {
+    flex: #{$i};
+  }
+}
+
+@for $i from 0 through 500 {
+  .pad#{$i} {
+    padding: #{$i}px;
+  }
+  .padh#{$i} {
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+  .padv#{$i} {
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+  }
+  .padt#{$i} {
+    padding-top: #{$i}px;
+  }
+  .padl#{$i} {
+    padding-left: #{$i}px;
+  }
+  .padr#{$i} {
+    padding-right: #{$i}px;
+  }
+  .padb#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .mar#{$i} {
+    margin: #{$i}px;
+  }
+  .marh#{$i} {
+    margin-left: #{$i}px;
+    margin-right: #{$i}px;
+  }
+  .marv#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+  }
+  .mart#{$i} {
+    margin-top: #{$i}px;
+  }
+  .marl#{$i} {
+    margin-left: #{$i}px;
+  }
+  .marr#{$i} {
+    margin-right: #{$i}px;
+  }
+  .marb#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+
+@for $i from 0 through 50 {
+  .brad#{$i}{
+    border-radius: #{$i}px;
+  }
+}
+
+@for $i from 0 through 50 {
+  .brad#{$i}{
+    border-radius: #{$i}px;
+  }
+}
+
+.circle{
+  border-radius: 50%;
+}
+
+.pointer{
+  cursor: pointer;
+}
