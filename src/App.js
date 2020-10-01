@@ -15,29 +15,6 @@ const App = props => {
   }
 
   const formInputs = [
-    /*{
-      content: <div className='mart10 marb20'>
-        <div className='app-imgContainer  w150 h150'>
-          <ImageUploader image={_image} updateImage={onUpdateImage}
-            preview={(image) => <img className='relw100 relh100' src={image} alt='produit' />}
-            pending={uploadPictureRequest.pending || setProductRequest.pending}
-            retry={_retryUploadingPicture.retry}
-            emptyPreview={() =>
-              <div className='relw100 relh100 flex aic jcc cgrey'>
-                <ImageIcon classes={{ root: 'app-imgIcon' }} />
-              </div>}
-            retryPreview={() =>
-              <div className='relw100 relh100 flex aic jcc cgrey pointer' onClick={sendImage}>
-                <ReplayIcon classes={{ root: 'app-replyIcon' }} />
-              </div>
-            }
-            pendingPreview={() =>
-              <div className='relh100 flex aife jcc'>
-                <p className='cwhite fs10 marb10'>Enregistrement en cours de l'image...</p>
-              </div>} />
-        </div>
-      </div>
-    },*/
     {
       name: 'text',
       label: 'Text',
@@ -60,19 +37,7 @@ const App = props => {
       validation: { required: "Champs requis" },
       options: (values) => [{value : 1, name : "Option 1"},{value : 2, name : "Option 2"},{value : 3, name : "Option 3"}]
     },
-    /*{
-      name: 'subCategory',
-      label: "Sous-catégorie",
-      type: 'select',
-      defaultValue: defaultSubCategory || _.get(product, 'subCategory'),
-      validation: { required: "Champs requis" },
-      watch: 'category',
-      options: (watchedValue) => {
-        console.log(watchedValue)
-        const category = watchedValue && categories.find(category => category.name === watchedValue)
-        return _.get(category, 'subCategories') && category.subCategories.map(subCategory => ({ value: subCategory, name: subCategory }))
-      }
-    },*/
+    
     {
       name: 'switch',
       label: 'Switch',
