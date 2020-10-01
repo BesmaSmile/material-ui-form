@@ -1,0 +1,14 @@
+.App{
+  & .app-imgContainer{
+    position: relative;
+    border-radius: 10px;
+    border: 0.6px solid var(--lightgrey);
+    & .app-imgIcon{
+      font-size: 40px
+    }
+    & .app-replyIcon{
+      font-size: 40px;
+      color: var(--light);
+    }
+  }
+}
